@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>РамЛес - построенные проекты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel='stylesheet' href='libs/swiper-9.2.3/swiper-bundle.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/common.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/built.min.css?_v=20230712084222'>
+	<!-- <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230712084222"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230712084222">
+
+	<!-- Libs and Common scripts -->
+	<script defered src='libs/tua-bsl.umd.js?_v=20230712084222'></script>
+	<script defered src='libs/jquery-3.6.2.min.js?_v=20230712084222'></script>
+	<script defered src='libs/jqueryValidate/jquery.validate.min.js?_v=20230712084222'></script>
+	<script defered src='libs/cleave.min.js?_v=20230712084222'></script>
+	<script defered src='js/common.min.js?_v=20230712084222'></script>
+
+	<!-- Page scripts -->
+	<script defered src='libs/swiper-9.2.3/swiper-bundle.min.js?_v=20230712084222'></script>
+	<script defered src='js/built.min.js?_v=20230712084222'></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключение шрифтов      &display=swap - добавить при подключении через плагин -->
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700&display=swap);
+	</style>
+	<!-- <script>
+		window.onerror = function(message, url, line, col, errorObj) {
+			console.log(`${message}\n${url}, ${line}:${col}`, errorObj);
+		};
+	</script> -->
+</head>
+
+<body>
+	<header class="header ">
+		<div class="section-container">
+			<div class="header__inner">
+				<div class="header__group header__group_left">
+					<button type="button" class="header__burger-btn burger-btn" data-drawer-open="main-menu">
+						<span class="burger-btn__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<a href="/" class="header__logo main-logo">
+						<figure>
+							<img src="img/static/main-logo.svg" alt="main-logo">
+							<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+						</figure>
+					</a>
+				</div>
+				<div class="header__main-menu-area" data-portal-src="main-nav-to-aside" data-portal-media="(max-width: 1400px)">
+					<nav class="main-menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a href="about.html" class="nav-link active-item main-menu__link ">Компания</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="projects.html" class="nav-link active-item main-menu__link ">Проекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="built.html" class="nav-link active-item main-menu__link ">Построенные объекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="show-area.html" class="nav-link active-item main-menu__link ">Выставочная площадка</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="contacts.html" class="nav-link active-item main-menu__link ">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__group header__group_right">
+					<a href="tel:88005555555" class="active-item header__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+					<button type="button" class="btn btn_light-clear btn_hover-sand btn_for-header" data-callback-request-btn>
+						<span class="btn__inner"><span class="btn__cap btn__cap_for-header">Заказать звонок</span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page__built">
+		<!-- Sections -->
+		<section class="welcome welcome_narrow relative">
+			<img class="img-as-bg" src="img/static/built/welcome@1x.jpg" srcset="img/static/built/welcome@1x.jpg 1920w, img/static/built/welcome@2x.jpg 2x" alt="welcome.jpg">
+			<div class="section-container welcome__container">
+				<a href="." class="text-link text-link_hover-sand text-link_tablet-as-btn text-link_mob-as-btn welcome__to-main-page-btn">
+					<svg class="text-link__icon text-link__icon_left" viewbox="0 0 13 12">
+						<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+					</svg>
+					<span class="text-link__cap">Вернуться на главную</span>
+				</a>
+				<h1 class="page-title">Построенные проекты</h1>
+			</div>
+		</section>
+		<section class="advantages dark-bg">
+			<div class="section-container">
+				<div class="advantages__header">
+					<h2 class="section-title">Собственное производство<br>клееного бруса</h2>
+					<div class="advantages__callback-request">
+						<div>Закажите звонок, чтобы задать вопросы про строительство дома</div>
+						<button type="button" class="btn btn_light-clear btn_hover-light advantages__callback-btn" data-callback-request-btn>
+							<span class="btn__inner">
+								<span class="btn__cap">Заказать звонок</span>
+								<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+									<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<ul class="advantages__body">
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Северная древесина</h3>
+						<p class="advantages__item-desc">
+							Строим дома из архангельского леса. Лето на севере короткое, годовые кольца местных деревьев узкие и расположены близко друг к другу. Такая древесина плотная, а значит постройки из нее будут прочными.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Эстетика натурального дерева</h3>
+						<p class="advantages__item-desc">
+							Дерево обладает прекрасным блеском, который может придать комнате теплоту и уют. Его естественная структура и форма привлекают взгляд и создают атмосферу гармонии и спокойствия
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Нет вреда от клея</h3>
+						<p class="advantages__item-desc">
+							При производстве клееного бруса используем Швейцарский однокомпонентный полеуретановый клей Purbond без содержания растворителей и формальдегидов. Наши дома не токсичны и не представляют опасности для здоровья.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Минимальная усадка</h3>
+						<p class="advantages__item-desc">
+							Клееный брус даёт усадку менее 1%. При производстве материал почти не изменяется и сохраняет первоначальную геометрию. Поэтому мы приступаем к внутренней отделке дома сразу после его возведения.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Экологичность</h3>
+						<p class="advantages__item-desc">
+							Клееный брус изготавливается в заводах, которые работают строго в соответствии с правилами экологической безопасности и не загрязняют окружающую среду
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Заселяйтесь сразу</h3>
+						<p class="advantages__item-desc">
+							Берем на себя все этапы производства: займемся проектированием, закладкой фундамента, сборкой сруба, обустройством кровли, проведением коммуникаций, внутренней и внешней отделкой.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="catalogue built-projects">
+			<div class="catalogue__header dark-bg">
+				<div class="section-container">
+					<div class="catalogue__header-inner">
+						<h2 class="catalogue__title section-title">Каталог построенных проектов</h2>
+						<form id="projects-filter-form" name="projects-filter" class="catalogue-filter">
+							<div class="catalogue-filter__inner">
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="projects-filter-form--one-floor-houses" type="checkbox" name="one-floor-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="projects-filter-form--one-floor-houses" class="custom-checkbox__label custom-checkbox__label_center">Одноэтажные дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="projects-filter-form--two-floors-houses" type="checkbox" name="two-floors-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="projects-filter-form--two-floors-houses" class="custom-checkbox__label custom-checkbox__label_center">Двухэтажные дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="projects-filter-form--guest-houses" type="checkbox" name="guest-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="projects-filter-form--guest-houses" class="custom-checkbox__label custom-checkbox__label_center">Гостевые дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="projects-filter-form--new-project" type="checkbox" name="new-project" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="projects-filter-form--new-project" class="custom-checkbox__label custom-checkbox__label_center">New проект</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="projects-slider" class="catalogue__body light-bg swiper">
+				<div class="catalogue__body-wrapper swiper-wrapper">
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="project-card project-card_built swiper-slide">
+						<img src="img/static/built/built-01@2x.jpg" alt="built-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+						<div class="ratio-wrap">
+							<div class="project-card__body project-card__container">
+								<div class="project-card__body-layout">
+									<h3 class="project-card__title">Биарриц | 160 м²</h3>
+									<span class="project-card__city">г. Тверь</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="catalogue__swipe-area-pointer swipe-area-pointer">
+					<svg class="swipe-area-pointer__icon" viewbox="0 0 28 28">
+						<use href='img/static/icons/icons.svg#swipe-area-pointer'></use>
+					</svg>
+				</div>
+			</div>
+			<div class="catalogue__footer dark-bg">
+				<div class="section-container catalogue__footer-inner">
+					<a href="" class="btn btn_light btn_hover-light btn_mob-big">
+						<span class="btn__inner">
+							<span class="btn__cap">Смотреть все проекты</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="loan dark-bg">
+			<div class="section-container">
+				<div class="loan__inner">
+					<div class="loan__header">
+						<h2 class="loan__title section-title">Ипотека</h2>
+						<div class="loan__subtitle">Ипотека по выгодной ставке от 5,3 % без залога и поручительства в одном из наших банков-партнеров</div>
+						<div class="loan__banks">
+							<div class="loan__banks-inner">
+								<img src="img/static/logos/bank-post.png" alt="bank-post.png">
+								<img src="img/static/logos/dom-click-sber.png" alt="dom-click-sber.png">
+								<img src="img/static/logos/dom-rf.png" alt="dom-rf.png">
+							</div>
+						</div>
+					</div>
+					<div class="loan__callback-form consultation-form">
+						<div class="consultation-form__inner">
+							<form id="loan-callback-request-form" name="loan-callback-request" class="consultation-form__main callback-request-form">
+								<div class="callback-request-form__header ts-h2">
+									Получить консультацию по ипотеке
+								</div>
+								<div class="callback-request-form__body">
+									<div class="form__field form-field">
+										<div class="form-field__input form-input" data-track-child-focus>
+											<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+										</div>
+									</div>
+									<div class="form__field form-field">
+										<div class="form-field__input form-input" data-track-child-focus>
+											<input class="form-input__input" data-rule-required data-msg-required="Обязательное поле" data-rule-minlength="18" data-msg-minlength="Не хватает цифр" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+										</div>
+									</div>
+									<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+										<span class="btn__inner">
+											<span class="btn__cap">Заказать звонок</span>
+										</span>
+									</button>
+									<div class="form__field form-field">
+										<div class="custom-checkbox custom-checkbox_box form-field__input">
+											<label class="custom-checkbox__inner">
+												<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+												<span class="custom-checkbox__body">
+													<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+														<use href='img/static/icons/icons.svg#check-arrow'></use>
+													</svg>
+												</span>
+											</label>
+											<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							<ul class="consultation-form__features">
+								<li>
+									<div class="ul-bullet">
+										<svg viewbox="0 0 14 12">
+											<use href='img/static/icons/icons.svg#check-arrow'></use>
+										</svg>
+									</div>
+									<div class="consultation-form-feature">
+										<h4 class="consultation-form-feature__title">100% одобрение заявки в течение одной недели</h4>
+										<div class="consultation-form-feature__text">Подготовим все документы и подадим заявку в один или несколько банков-партнеров</div>
+									</div>
+								</li>
+								<li>
+									<div class="ul-bullet">
+										<svg viewbox="0 0 14 12">
+											<use href='img/static/icons/icons.svg#check-arrow'></use>
+										</svg>
+									</div>
+									<div class="consultation-form-feature">
+										<h4 class="consultation-form-feature__title">Возможно оформление в зачет вторичного жилья</h4>
+										<div class="consultation-form-feature__text">Наш юрист сопровождает вас на всех этапах сделки, готовит все необходимые документы</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</form>
+					</div>
+				</div>
+		</section>
+	</main>
+	<footer class="footer " itemscope itemtype="http://schema.org/WPFooter">
+		<div class="section-container">
+			<div class="footer__inner">
+				<div class="footer__body">
+					<div class="footer__nav-group">
+						<div class="footer__nav-group-inner">
+							<ul class="footer__nav footer-nav">
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Главная страница</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="about.html" class="active-item">Компания</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты бань</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты домов</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="built.html" class="active-item">Построенные объекты</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="show-area.html" class="active-item">Выставочная площадка</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="contacts.html" class="active-item">Политика конфиденциальности</a>
+								</li>
+							</ul>
+							<div class="footer__contacts contacts" itemscope itemtype="http://schema.org/Organization">
+								<div class="contacts__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Москва</span>,
+									<span itemprop="streetAddress">ул. Советская, д. 1, БЦ «Центральный», оф. 412</span>
+								</div>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="mailto:info@website.ru" itemprop="email">info@website.ru</a>
+							</div>
+						</div>
+					</div>
+					<form id="footer-callback-request-form" name="callback-request" class="footer__callback-request-form callback-request-form">
+						<div class="callback-request-form__header ts-h2">
+							Хотите работать с нами?
+						</div>
+						<div class="callback-request-form__body">
+							<div class="form__field form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+								</div>
+							</div>
+							<div class="form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" data-rule-required data-msg-required="Обязательное поле" data-rule-minlength="18" data-msg-minlength="Не хватает цифр" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+								</div>
+							</div>
+							<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Заказать звонок</span>
+								</span>
+							</button>
+							<div class="form__field form-field">
+								<div class="custom-checkbox custom-checkbox_box form-field__input">
+									<label class="custom-checkbox__inner">
+										<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="footer__bottom">
+					<a href="/"><img src="img/static/partner-banner.jpg" alt="partner-banner.jpg" class="footer__banner"></a>
+					<span class="ts-text footer__about-dev">
+						Разработка сайта — Градус°
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="drawer drawer_overlapping drawer_full-screen" data-drawer="main-menu">
+		<div class="drawer__panel">
+			<div class="drawer__inner burger-menu">
+				<div class="burger-menu__main-layer" data-scrollable>
+					<div class="burger-menu__container section-container">
+						<div class="burger-menu__inner">
+							<div class="burger-menu__layout">
+								<div class="burger-menu__nav" data-portal-dest="main-nav-to-aside"></div>
+								<div class="burger-menu__group">
+									<div class="burger-menu__group-inner">
+										<a href="tel:88005555555" class="active-item burger-menu__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+										<button type="button" class="btn btn_light-clear btn_hover-sand" data-callback-request-btn>
+											<span class="btn__inner">
+												<span class="btn__cap">Заказать звонок</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+								<a href="/" class="burger-menu__logo main-logo">
+									<figure>
+										<img src="img/static/main-logo.svg" alt="main-logo">
+										<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+									</figure>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger-menu__overlay">
+					<div class="burger-menu__container burger-menu__container_overlay section-container">
+						<div class="burger-menu__inner">
+							<button type="button" class="burger-menu__close-btn drawer__close-btn btn btn_only-icon" data-drawer-close="main-menu">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drawer drawer_overlapping drawer_modal" data-drawer="successful-callback-request">
+		<div class="drawer__panel">
+			<div class="drawer__inner">
+				<div class="drawer__body">
+					<div class="drawer__container">
+						<div class="thanks-panel">
+							<div class="thanks-panel__main">Спасибо<br>за обращение!</div>
+							<div class="thanks-panel__sub">Мы свяжемся с вами в течение 1 рабочего дня с 9:00 до 18:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="drawer__overlay">
+					<div class="drawer__header">
+						<div class="drawer__container">
+							<button type="button" class="drawer__close-btn btn btn_only-icon" data-drawer-close="successful-callback-request">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

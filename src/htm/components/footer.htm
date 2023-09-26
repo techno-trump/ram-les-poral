@@ -1,0 +1,93 @@
+<footer class="footer @@style" itemscope itemtype="http://schema.org/WPFooter">
+	<div class="section-container">
+		<div class="footer__inner">
+			<div class="footer__body">
+				<div class="footer__nav-group">
+					<div class="footer__nav-group-inner">
+						<ul class="footer__nav footer-nav">
+							<li class="footer-nav__item">
+								<a href="/" class="active-item">Главная страница</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="about.html" class="active-item">Компания</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="/" class="active-item">Проекты бань</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="/" class="active-item">Проекты домов</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="built.html" class="active-item">Построенные объекты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="show-area.html" class="active-item">Выставочная площадка</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="contacts.html" class="active-item">Политика конфиденциальности</a>
+							</li>
+						</ul>
+						<div class="footer__contacts contacts" itemscope itemtype="http://schema.org/Organization">
+							<div class="contacts__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+								<span itemprop="addressLocality">Москва</span>, 
+								<span itemprop="streetAddress">ул. Советская, д. 1, БЦ «Центральный», оф. 412</span>
+							</div>
+							<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+								+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+							</a>
+							<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+								+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+							</a>
+							<a class="contacts__item active-item" href="mailto:info@website.ru" itemprop="email">info@website.ru</a>
+						</div>
+					</div>
+				</div>
+				<form id="footer-callback-request-form" name="callback-request" class="footer__callback-request-form callback-request-form">
+					<div class="callback-request-form__header ts-h2">
+						Хотите работать с нами?
+					</div>
+					<div class="callback-request-form__body">
+						<div class="form__field form-field">
+							<div class="form-field__input form-input" data-track-child-focus>
+								<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+							</div>
+						</div>
+						<div class="form-field">
+							<div class="form-field__input form-input" data-track-child-focus>
+								<input class="form-input__input"
+									data-rule-required data-msg-required="Обязательное поле"
+									data-rule-minlength="18" data-msg-minlength="Не хватает цифр"
+									name="tel" type="tel"
+									placeholder="+7 (999) 999-99-99">
+							</div>
+						</div>
+						<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+							<span class="btn__inner">
+								<span class="btn__cap">Заказать звонок</span>
+							</span>
+						</button>
+						<div class="form__field form-field">
+							<div class="custom-checkbox custom-checkbox_box form-field__input">
+								<label class="custom-checkbox__inner">
+									<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+									<span class="custom-checkbox__body">
+										<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+											<use href='@img/static/icons/icons.svg#check-arrow'></use>
+										</svg>
+									</span>
+								</label>
+								<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="footer__bottom">
+				<a href="/"><img src="@img/static/partner-banner.jpg" alt="partner-banner.jpg" class="footer__banner"></a>
+				<span class="ts-text footer__about-dev">
+					Разработка сайта — Градус°
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>

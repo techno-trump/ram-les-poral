@@ -1,0 +1,6 @@
+@use "sass:math";
+@import "../../config.scss";
+
+// Базовая разметка страницы
+@import "built.scss";
+@import "../../components/loan.scss";

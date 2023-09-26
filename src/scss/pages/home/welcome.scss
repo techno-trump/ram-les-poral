@@ -1,0 +1,21 @@
+.welcome {
+	&__container {
+		justify-content: flex-start;
+		padding-top: 387px;
+		@media (max-width: $mbpPC) {
+			padding-top: 381px;
+		}
+		@media (max-width: $mbpT) {
+			padding-top: 310px;
+		}
+		@media (max-width: $mbpM) {
+			padding-top: 277px;
+		}
+	}
+	& .page-title {
+		margin-bottom: 30px;
+		@media (max-width: $mbpPC) {
+			margin-bottom: 20px;
+		}
+	}
+}

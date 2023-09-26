@@ -1,0 +1,132 @@
+.advantages-block {
+	display: inline-grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	@media (max-width: 1240px) {
+		gap: 10px;
+	}
+	& > * {
+		display: flex;
+		align-items: center;
+		width: 120px;
+		min-height: 120px;
+		font-family: Onest;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		text-align: center;
+		text-transform: uppercase;
+		color: var(--main-white-color);
+		border-radius: 60px;
+		background-color: var(--graphit-color);
+		padding: 15px;
+		@media (max-width: 1240px) {
+			width: 95px;
+			min-height: 95px;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+}
+.location-ref-list {
+	display: grid;
+	gap: 40px;
+	@media (max-width: $mbpPC) {
+		gap: 30px;
+	}
+}
+.location-ref {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	@media (max-width: $mbpM) {
+		align-items: flex-start;
+		text-align: left;
+	}
+	&__name {
+		font-size: 35px;
+		font-weight: 500;
+		line-height: 39px;
+		letter-spacing: -0.01em;
+		margin-bottom: 14px;
+		color: var(--main-white-color);
+		@media (max-width: $mbpPC) {
+			font-size: 33px;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+		@media (max-width: $mbpT) {
+			font-size: 28px;
+			line-height: 30px;
+		}
+		@media (max-width: $mbpM) {
+			font-size: 24px;
+			line-height: 26px;
+			margin-bottom: 8px;
+		}
+	}
+	&__address {
+		font-size: 14px;
+		line-height: 19px;
+		margin-bottom: 30px;
+		color: var(--text-base-color);
+		@media (max-width: $mbpPC) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: $mbpT) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: $mbpM) {
+			margin-bottom: 20px;
+
+		}
+	}
+}
+.show-area {
+	&__description {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		@media (max-width: $mbpPC) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+		@media (max-width: $mbpT) {
+			padding-top: 60px;
+			padding-bottom: 66px;
+		}
+		@media (max-width: $mbpM) {
+			grid-row: 2/span 1;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+	}
+	&__location {
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		left: 0;
+		top: 0;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		z-index: 0;
+		@media (max-width: $mbpPC) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+		@media (max-width: $mbpT) {
+			padding-top: 66px;
+			padding-bottom: 66px;
+		}
+		@media (max-width: $mbpM) {
+			padding-top: 100px;
+			padding-bottom: 30px;
+		}
+	}
+	&__advantages {
+		margin-bottom: 70px;
+		@media (max-width: $mbpT) {
+			display: none;
+		}
+	}
+}

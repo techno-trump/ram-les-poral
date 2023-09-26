@@ -1,0 +1,9 @@
+@use "sass:math";
+@import "../../config.scss";
+
+// Базовая разметка страницы
+@import "welcome.scss";
+@import "planing.scss";
+@import "bundle.scss";
+@import "similar.scss";
+@import "../../components/loan.scss";

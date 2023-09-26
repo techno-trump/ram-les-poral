@@ -1,0 +1,9 @@
+@use "sass:math";
+@import "../../config.scss";
+
+// Базовая разметка страницы
+@import "welcome.scss";
+@import "categories.scss";
+@import "about.scss";
+@import "show-area.scss";
+@import "catalogue.scss";

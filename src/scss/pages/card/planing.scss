@@ -1,0 +1,68 @@
+.planing {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@media (max-width: $mbpPC) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mbpT) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mbpM) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&__header {
+		margin-bottom: 40px;
+		@media (max-width: $mbpPC) {
+			margin-bottom: 30px;
+		}
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px 160px;
+		@media (max-width: $mbpPC) {
+			gap: 40px 60px;
+		}
+		@media (max-width: $mbpT) {
+			gap: 40px 40px;
+		}
+		@media (max-width: $mbpM) {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+	}
+	&__plans {
+		grid-row: auto/span 3;
+		@media (max-width: $mbpT) {
+			grid-row: auto/span 1;
+		}
+	}
+	& .info-block__body {
+		& strong {
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 30px;
+			color: var(--main-white-color);
+		}
+		& > * {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__btn {
+		align-self: start;
+	}
+}
+.floor-plan {
+	& > img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+	}
+}

@@ -1,0 +1,12 @@
+.advantages {
+	padding-bottom: 150px;
+	@media (max-width: $mbpPC) {
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mbpT) {
+		padding-bottom: 60px;
+	}
+	@media (max-width: $mbpM) {
+		padding-bottom: 40px;
+	}
+}

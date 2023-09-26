@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>РамЛес - каталог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel='stylesheet' href='libs/swiper-9.2.3/swiper-bundle.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/common.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/catalogue.min.css?_v=20230712084222'>
+	<!-- <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230712084222"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230712084222">
+
+	<!-- Libs and Common scripts -->
+	<script defered src='libs/tua-bsl.umd.js?_v=20230712084222'></script>
+	<script defered src='libs/jquery-3.6.2.min.js?_v=20230712084222'></script>
+	<script defered src='libs/jqueryValidate/jquery.validate.min.js?_v=20230712084222'></script>
+	<script defered src='libs/cleave.min.js?_v=20230712084222'></script>
+	<script defered src='js/common.min.js?_v=20230712084222'></script>
+
+	<!-- Page scripts -->
+	<script defered src='libs/swiper-9.2.3/swiper-bundle.min.js'>
+		< script defered src = 'libs/cleave.min.js' >
+	</script>
+	<script defered src='js/catalogue.min.js?_v=20230712084222'></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключение шрифтов      &display=swap - добавить при подключении через плагин -->
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700&display=swap);
+	</style>
+	<!-- <script>
+		window.onerror = function(message, url, line, col, errorObj) {
+			console.log(`${message}\n${url}, ${line}:${col}`, errorObj);
+		};
+	</script> -->
+</head>
+
+<body>
+	<header class="header ">
+		<div class="section-container">
+			<div class="header__inner">
+				<div class="header__group header__group_left">
+					<button type="button" class="header__burger-btn burger-btn" data-drawer-open="main-menu">
+						<span class="burger-btn__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<a href="/" class="header__logo main-logo">
+						<figure>
+							<img src="img/static/main-logo.svg" alt="main-logo">
+							<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+						</figure>
+					</a>
+				</div>
+				<div class="header__main-menu-area" data-portal-src="main-nav-to-aside" data-portal-media="(max-width: 1400px)">
+					<nav class="main-menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a href="about.html" class="nav-link active-item main-menu__link ">Компания</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="projects.html" class="nav-link active-item main-menu__link ">Проекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="built.html" class="nav-link active-item main-menu__link ">Построенные объекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="show-area.html" class="nav-link active-item main-menu__link ">Выставочная площадка</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="contacts.html" class="nav-link active-item main-menu__link ">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__group header__group_right">
+					<a href="tel:88005555555" class="active-item header__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+					<button type="button" class="btn btn_light-clear btn_hover-sand btn_for-header" data-callback-request-btn>
+						<span class="btn__inner"><span class="btn__cap btn__cap_for-header">Заказать звонок</span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page__main">
+		<!-- Sections -->
+		<section class="catalogue catalogue_main">
+			<div class="catalogue__header dark-bg">
+				<div class="section-container">
+					<div class="catalogue__header-inner">
+						<h2 class="catalogue__title section-title">Проекты домов из клееного бруса</h2>
+						<form id="short-filter-form" name="short-filter" class="catalogue-filter">
+							<div class="catalogue-filter__inner">
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="short-filter--one-floor-houses" type="checkbox" name="one-floor-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="short-filter--one-floor-houses" class="custom-checkbox__label custom-checkbox__label_center">Одноэтажные дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="short-filter--two-floors-houses" type="checkbox" name="two-floors-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="short-filter--two-floors-houses" class="custom-checkbox__label custom-checkbox__label_center">Двухэтажные дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="short-filter--guest-houses" type="checkbox" name="guest-houses" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="short-filter--guest-houses" class="custom-checkbox__label custom-checkbox__label_center">Гостевые дома</label>
+								</div>
+								<div class="custom-checkbox custom-checkbox_round catalogue-filter__category-select">
+									<label class="custom-checkbox__inner">
+										<input id="short-filter--new-project" type="checkbox" name="new-project" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="short-filter--new-project" class="custom-checkbox__label custom-checkbox__label_center">New проект</label>
+								</div>
+							</div>
+						</form>
+						<button type="button" class="btn btn_light-clear btn_small btn_wide btn_hover-sand catalogue__top-filter-btn" data-drawer-open="filter">
+							<span class="btn__inner">
+								<span class="btn__cap">Фильтр</span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="catalogue-slider" class="catalogue__body light-bg swiper">
+				<div class="catalogue__body-wrapper swiper-wrapper">
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-card project-card_catalogue swiper-slide" data-card>
+						<div class="project-card__top">
+							<div class="ratio-wrap">
+								<img src="img/static/catalogue/catalogue-01@2x.jpg" alt="catalogue-01@2x.jpg" class="img-as-bg img-as-bg_zoom-on-hover">
+								<div class="project-card__container">
+									<div class="project-card__features">
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/bed.png" alt="bed.png">
+											</div>
+											<span class="project-feature__value">2 спальни</span>
+										</div>
+										<div class="project-feature">
+											<div class="project-feature__icon">
+												<img src="img/static/icons/ladder.png" alt="ladder.png">
+											</div>
+											<span class="project-feature__value">2 этажа</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card__body dark-bg">
+							<div class="project-card__container">
+								<div class="project-card__body-layout">
+									<div class="project-card__block">
+										<h3 class="project-card__title">Дом «Биарриц» | 160м²</h3>
+										<span class="project-card__subtitle">Просторный двухэтажный дом для большой семьи, которая любит приглашать в гости</span>
+
+									</div>
+									<div class="project-card__block">
+										<span class="project-card__price">от 4 560 000 ₽</span>
+										<a href="" class="btn btn_light-clear btn_hover-sand btn_hover-on-card project-card__open-btn">
+											<span class="btn__inner">
+												<span class="btn__cap">Перейти на страницу проекта</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalogue__swipe-area-pointer swipe-area-pointer">
+					<svg class="swipe-area-pointer__icon" viewbox="0 0 28 28">
+						<use href='img/static/icons/icons.svg#swipe-area-pointer'></use>
+					</svg>
+				</div>
+			</div>
+			<div class="catalogue__footer dark-bg">
+				<div class="section-container catalogue__footer-inner">
+					<button type="button" class="btn btn_light-clear btn_hover-light btn_mob-big" data-drawer-open="filter">
+						<span class="btn__inner">
+							<span class="btn__cap">Фильтр</span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer " itemscope itemtype="http://schema.org/WPFooter">
+		<div class="section-container">
+			<div class="footer__inner">
+				<div class="footer__body">
+					<div class="footer__nav-group">
+						<div class="footer__nav-group-inner">
+							<ul class="footer__nav footer-nav">
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Главная страница</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="about.html" class="active-item">Компания</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты бань</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты домов</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="built.html" class="active-item">Построенные объекты</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="show-area.html" class="active-item">Выставочная площадка</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="contacts.html" class="active-item">Политика конфиденциальности</a>
+								</li>
+							</ul>
+							<div class="footer__contacts contacts" itemscope itemtype="http://schema.org/Organization">
+								<div class="contacts__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Москва</span>,
+									<span itemprop="streetAddress">ул. Советская, д. 1, БЦ «Центральный», оф. 412</span>
+								</div>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="mailto:info@website.ru" itemprop="email">info@website.ru</a>
+							</div>
+						</div>
+					</div>
+					<form id="footer-callback-request-form" name="callback-request" class="footer__callback-request-form callback-request-form">
+						<div class="callback-request-form__header ts-h2">
+							Хотите работать с нами?
+						</div>
+						<div class="callback-request-form__body">
+							<div class="form__field form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+								</div>
+							</div>
+							<div class="form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" data-rule-required data-msg-required="Обязательное поле" data-rule-minlength="18" data-msg-minlength="Не хватает цифр" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+								</div>
+							</div>
+							<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Заказать звонок</span>
+								</span>
+							</button>
+							<div class="form__field form-field">
+								<div class="custom-checkbox custom-checkbox_box form-field__input">
+									<label class="custom-checkbox__inner">
+										<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="footer__bottom">
+					<a href="/"><img src="img/static/partner-banner.jpg" alt="partner-banner.jpg" class="footer__banner"></a>
+					<span class="ts-text footer__about-dev">
+						Разработка сайта — Градус°
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="drawer drawer_overlapping drawer_full-screen" data-drawer="main-menu">
+		<div class="drawer__panel">
+			<div class="drawer__inner burger-menu">
+				<div class="burger-menu__main-layer" data-scrollable>
+					<div class="burger-menu__container section-container">
+						<div class="burger-menu__inner">
+							<div class="burger-menu__layout">
+								<div class="burger-menu__nav" data-portal-dest="main-nav-to-aside"></div>
+								<div class="burger-menu__group">
+									<div class="burger-menu__group-inner">
+										<a href="tel:88005555555" class="active-item burger-menu__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+										<button type="button" class="btn btn_light-clear btn_hover-sand" data-callback-request-btn>
+											<span class="btn__inner">
+												<span class="btn__cap">Заказать звонок</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+								<a href="/" class="burger-menu__logo main-logo">
+									<figure>
+										<img src="img/static/main-logo.svg" alt="main-logo">
+										<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+									</figure>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger-menu__overlay">
+					<div class="burger-menu__container burger-menu__container_overlay section-container">
+						<div class="burger-menu__inner">
+							<button type="button" class="burger-menu__close-btn drawer__close-btn btn btn_only-icon" data-drawer-close="main-menu">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drawer drawer_overlapping drawer_left" data-drawer="filter">
+		<div class="drawer__panel">
+			<form name="main-filter" class="drawer__inner catalogue-main-filter">
+				<div class="drawer__header">
+					<div class="drawer__container">
+						<button type="button" class="btn btn_only-icon drawer__close-btn" data-drawer-close="filter">
+							<svg class="svg-icon" viewbox="0 0 22 22">
+								<use href='img/static/icons/icons.svg#close-cross'></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="catalogue-main-filter__inner" data-scrollable>
+					<div class="catalogue-main-filter__body">
+						<div class="catalogue-main-filter__container">
+							<h2 class="catalogue-main-filter__title">Фильтр каталога</h2>
+						</div>
+						<div class="catalogue-main-filter__body">
+							<div class="catalogue-main-filter__container">
+								<div class="filter-block">
+									<h3 class="filter-block__name">Категория дома:</h3>
+									<div class="filter-block__body">
+										<ul class="filters-list">
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--house" type="checkbox" name="category--house" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--house" class="custom-checkbox__label custom-checkbox__label_center">Дома</label>
+												</div>
+											</li>
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--half-timbered" type="checkbox" name="category--half-timbered" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--half-timbered" class="custom-checkbox__label custom-checkbox__label_center">Фахверки</label>
+												</div>
+											</li>
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--guest-houses" type="checkbox" name="category--guest-houses" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--guest-houses" class="custom-checkbox__label custom-checkbox__label_center">Гостевые дома</label>
+												</div>
+											</li>
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--baths" type="checkbox" name="category--baths" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--baths" class="custom-checkbox__label custom-checkbox__label_center">Бани</label>
+												</div>
+											</li>
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--gazebos" type="checkbox" name="category--gazebos" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--gazebos" class="custom-checkbox__label custom-checkbox__label_center">Гриль-беседки</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="filter-block">
+									<h3 class="filter-block__name">Этажность:</h3>
+									<div class="filter-block__body">
+										<ul class="filters-list">
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--floors--one" type="checkbox" name="floors--one" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--floors--one" class="custom-checkbox__label custom-checkbox__label_center">Один этаж</label>
+												</div>
+											</li>
+											<li>
+												<div class="custom-checkbox custom-checkbox_box">
+													<label class="custom-checkbox__inner">
+														<input id="main-filter--floors--two" type="checkbox" name="floors--two" class="custom-checkbox__input">
+														<span class="custom-checkbox__body">
+															<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+																<use href='img/static/icons/icons.svg#check-arrow'></use>
+															</svg>
+														</span>
+													</label>
+													<label for="main-filter--floors--one" class="custom-checkbox__label custom-checkbox__label_center">Два этажа</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="filter-block max-width">
+									<h3 class="filter-block__name">Цена:</h3>
+									<div class="filter-block__body">
+										<div class="range-controls-set">
+											<div class="range-inputs-group">
+												<label class="range-input" data-track-child-focus style="--min-width: 154px;">
+													<span class="range-input__body">
+														<span class="range-input__input-wrap">
+															<input id="price-from" maxlength="10" type="text" name="__price-from" class="range-input__input" data-price data-input-auto-size data-range-input-from="price">
+														</span>
+													</span>
+													<span class="range-input__unit">₽</span>
+												</label>
+												<span class="range-inputs-group__delimiter"></span>
+												<label class="range-input" data-track-child-focus style="--min-width: 154px;">
+													<span class="range-input__body">
+														<span class="range-input__input-wrap">
+															<input id="price-to" maxlength="10" type="text" name="__price-to" class="range-input__input" data-price data-input-auto-size data-range-input-to="price">
+														</span>
+													</span>
+													<span class="range-input__unit">₽</span>
+												</label>
+											</div>
+											<div class="double-range-slider" data-double-range-slider="price" data-sync-with-inputs>
+												<input id="main-filter--price-from" class="double-range-slider__from" name="price-from" type="range" min="1000" max="99000000" value="1500000">
+												<input id="main-filter--price-to" class="double-range-slider__to" name="price-to" type="range" min="1000" max="99000000" value="99000000">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-block max-width">
+									<h3 class="filter-block__name">Площадь:</h3>
+									<div class="filter-block__body">
+										<div class="range-controls-set">
+											<div class="range-inputs-group">
+												<label class="range-input" data-track-child-focus style="--min-width: 124px;">
+													<span class="range-input__prefix">от</span>
+													<span class="range-input__body">
+														<span class="range-input__input-wrap">
+															<input id="main-filter--square-from-input" maxlength="3" type="text" name="__square-from" class="range-input__input" data-only-digits data-input-auto-size data-range-input-from="square">
+														</span>
+													</span>
+													<span class="range-input__unit">м²</span>
+												</label>
+												<span class="range-inputs-group__delimiter"></span>
+												<label class="range-input" data-track-child-focus style="--min-width: 124px;">
+													<span class="range-input__prefix">до</span>
+													<span class="range-input__body">
+														<span class="range-input__input-wrap">
+															<input id="main-filter--square-to-input" maxlength="3" type="text" name="__square-to" class="range-input__input" data-only-digits data-input-auto-size data-range-input-from="square">
+														</span>
+													</span>
+													<span class="range-input__unit">м²</span>
+												</label>
+											</div>
+											<div class="double-range-slider" data-double-range-slider="square" data-sync-with-inputs>
+												<input id="main-filter--square-from" class="double-range-slider__from" name="square-from" type="range" min="10" max="999" value="120">
+												<input id="main-filter--square-to" class="double-range-slider__to" name="square-to" type="range" min="10" max="999" value="999">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalogue-main-filter__footer">
+							<div class="catalogue-main-filter__container">
+								<button type="submit" class="btn btn_light-clear btn_mob-big btn_hover-sand">
+									<span class="btn__inner">
+										<span class="btn__cap">Применить фильтр</span>
+									</span>
+								</button>
+								<button id="main-filter-reset" type="button" class="btn btn_light btn_mob-big btn_hover-sand">
+									<span class="btn__inner">
+										<span class="btn__cap">Очистить фильтр</span>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="drawer drawer_overlapping drawer_modal" data-drawer="successful-callback-request">
+		<div class="drawer__panel">
+			<div class="drawer__inner">
+				<div class="drawer__body">
+					<div class="drawer__container">
+						<div class="thanks-panel">
+							<div class="thanks-panel__main">Спасибо<br>за обращение!</div>
+							<div class="thanks-panel__sub">Мы свяжемся с вами в течение 1 рабочего дня с 9:00 до 18:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="drawer__overlay">
+					<div class="drawer__header">
+						<div class="drawer__container">
+							<button type="button" class="drawer__close-btn btn btn_only-icon" data-drawer-close="successful-callback-request">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

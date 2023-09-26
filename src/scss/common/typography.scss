@@ -1,0 +1,181 @@
+:root {
+	// Headings
+	--ts-h1-fz: 65px;
+	--ts-h1-lh: 70px;
+	--ts-h2-fz: 50px;
+	--ts-h2-lh: 48px;
+	--ts-large-title-fz: 45px;
+	--ts-large-title-lh: 50px;
+	--ts-title-fz: 35px;
+	--ts-title-lh: 39px;
+	--ts-advantage-title-fz: 25px;
+	--ts-advantage-title-lh: 24px;
+	--ts-card-title-fz: 25px;
+	--ts-card-title-lh: 24px;
+	// Text
+	--ts-numbers-fz: 65px;
+	--ts-numbers-lh: 62.5px;
+	--ts-name-fz: 30px;
+	--ts-name-lh: 41.4px;
+	--ts-quote-fz: 24px;
+	--ts-quote-lh: 33px;
+	--ts-large-text-fz: 22px;
+	--ts-large-text-lh: 30.5px;
+	--ts-link-fz: 20px;
+	--ts-link-lh: 1;
+	--ts-nav-link-fz: 13px;
+	--ts-nav-link-lh: 17px;
+	--ts-position-fz: 16px;
+	--ts-position-lh: 22px;
+	--ts-text-fz: 16px;
+	--ts-text-lh: 22px;
+	--ts-small-sub-title-fz: 14px;
+	--ts-small-sub-title-lh: 19.5px;
+	--ts-small-text-fz: 12px;
+	--ts-small-text-lh: 16.5px;
+	@media (max-width: $mbpPC) {
+		// Headings
+		--ts-h1-fz: 55px;
+		--ts-h1-lh: 58.85px;
+		--ts-h2-fz: 43px;
+		--ts-h2-lh: 41.28px;
+		--ts-large-title-fz: 38px;
+		--ts-large-title-lh: 41.8px;
+		--ts-title-fz: 33px;
+		--ts-title-lh: 36.3px;
+		--ts-advantage-title-fz: 23px;
+		--ts-advantage-title-lh: 22.08px;
+		--ts-card-title-fz: 22px;
+		--ts-card-title-lh: 24px;
+		// Text
+		--ts-numbers-fz: 38px;
+		--ts-numbers-lh: 41.8px;
+		--ts-name-fz: 30px;
+		--ts-name-lh: 41.4px;
+		--ts-large-text-fz: 18px;
+		--ts-large-text-lh: 24.84px;
+		--ts-text-fz: 14px;
+		--ts-text-lh: 19.5px;
+	}
+	@media (max-width: $mbpT) {
+		// Headings
+		--ts-h1-fz: 45px;
+		--ts-h1-lh: 48.15px;
+		--ts-h2-fz: 38px;
+		--ts-h2-lh: 36.48px;
+		--ts-title-fz: 28px;
+		--ts-title-lh: 30.8px;
+		--ts-advantage-title-fz: 23px;
+		--ts-advantage-title-lh: 25.3px;
+		--ts-card-title-fz: 25px;
+		--ts-card-title-lh: 24px;
+		// Text
+		--ts-name-fz: 20px;
+		--ts-name-lh: 27.6px;
+		--ts-small-text-fz: 10px;
+		--ts-small-text-lh: 13.8px;
+	}
+	@media (max-width: $mbpM) {
+		// Headings
+		--ts-h1-fz: 33px;
+		--ts-h1-lh: 35.3px;
+		--ts-h2-fz: 28px;
+		--ts-h2-lh: 26.9px;
+		--ts-large-title-fz: 28px;
+		--ts-large-title-lh: 30.8px;
+		--ts-advantage-title-fz: 20px;
+		--ts-advantage-title-lh: 22px;
+		--ts-card-title-fz: 18px;
+		--ts-card-title-lh: 17.3px;
+		// Text
+		--ts-numbers-fz: 28px;
+		--ts-numbers-lh: 30.8px;
+		--ts-name-fz: 20px;
+		--ts-name-lh: 27.6px;
+		--ts-large-text-fz: 16px;
+		--ts-large-text-lh: 22px;
+	}
+}
+.ts-h1 {
+	font-size: var(--ts-h1-fz);
+	line-height: var(--ts-h1-lh);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+.ts-h2 {
+	font-size: var(--ts-h2-fz);
+	line-height: var(--ts-h2-lh);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+.ts-large-title {
+	font-size: var(--ts-large-title-fz);
+	line-height: var(--ts-large-title-lh);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+.ts-title {
+
+	font-size: var(--ts-title-fz);
+	line-height: var(--ts-title-lh);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+.ts-advantage-title {
+	font-size: var(--ts-advantage-title-fz);
+	line-height: var(--ts-advantage-title-lh);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+.ts-card-title {
+	font-size: var(--ts-card-title-fz);
+	line-height: var(--ts-card-title-lh);
+	letter-spacing: -0.01em;
+}
+.ts-numbers {
+	font-size: var(--ts-numbers-fz);
+	line-height: var(--ts-numbers-lh);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+.ts-name {
+	font-size: var(--ts-name-fz);
+	line-height: var(--ts-name-lh);
+	font-weight: 700;
+}
+.ts-quote {
+	font-size: var(--ts-quote-fz);
+	line-height: var(--ts-quote-lh);
+}
+.ts-large-text {
+	font-size: var(--ts-large-text-fz);
+	line-height: var(--ts-large-text-lh);
+}
+.ts-link {
+	font-size: var(--ts-link-fz);
+	line-height: var(--ts-link-lh);
+	font-weight: 500;
+}
+.ts-nav-link {
+	font-size: var(--ts-nav-link-fz);
+	line-height: var(--ts-nav-link-lh);
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+.ts-position {
+	font-size: var(--ts-position-fz);
+	line-height: var(--ts-position-lh);
+}
+.ts-text {
+	font-size: var(--ts-text-fz);
+	line-height: var(--ts-text-lh);
+}
+.ts-small-sub-title {
+	font-size: var(--ts-small-sub-title-fz);
+	line-height: var(--ts-small-sub-title-lh);
+}
+.ts-small-text {
+	font-size: var(--ts-small-text-fz);
+	line-height: var(--ts-small-text-lh);
+}

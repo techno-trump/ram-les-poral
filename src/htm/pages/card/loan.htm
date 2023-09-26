@@ -1,0 +1,84 @@
+<section class="loan dark-bg">
+	<div class="section-container">
+		<div class="loan__inner">
+			<div class="loan__header">
+				<h2 class="loan__title section-title">Ипотека</h2>
+				<div class="loan__subtitle">Ипотека по выгодной ставке от 5,3 % без залога и поручительства в одном из наших банков-партнеров</div>
+				<div class="loan__banks">
+					<div class="loan__banks-inner">
+						<img src="@img/static/logos/bank-post.png" alt="bank-post.png">
+						<img src="@img/static/logos/dom-click-sber.png" alt="dom-click-sber.png">
+						<img src="@img/static/logos/dom-rf.png" alt="dom-rf.png">
+					</div>
+				</div>
+			</div>
+			<div class="loan__callback-form consultation-form">
+				<div class="consultation-form__inner">
+					<form id="loan-callback-request-form" name="loan-callback-request" class="consultation-form__main callback-request-form">
+						<div class="callback-request-form__header ts-h2">
+							Получить консультацию по ипотеке
+						</div>
+						<div class="callback-request-form__body">
+							<div class="form__field form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+								</div>
+							</div>
+							<div class="form__field form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input"
+										data-rule-required data-msg-required="Обязательное поле"
+										data-rule-minlength="18" data-msg-minlength="Не хватает цифр"
+										name="tel" type="tel"
+										placeholder="+7 (999) 999-99-99">
+								</div>
+							</div>
+							<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Заказать звонок</span>
+								</span>
+							</button>
+							<div class="form__field form-field">
+								<div class="custom-checkbox custom-checkbox_box form-field__input">
+									<label class="custom-checkbox__inner">
+										<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='@img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+								</div>
+							</div>
+						</div>
+					</form>
+					<ul class="consultation-form__features">
+						<li>
+							<div class="ul-bullet">
+								<svg viewbox="0 0 14 12">
+									<use href='@img/static/icons/icons.svg#check-arrow'></use>
+								</svg>
+							</div>
+							<div class="consultation-form-feature">
+								<h4 class="consultation-form-feature__title">100% одобрение заявки в течение одной недели</h4>
+								<div class="consultation-form-feature__text">Подготовим все документы и подадим заявку в один или несколько банков-партнеров</div>
+							</div>
+						</li>
+						<li>
+							<div class="ul-bullet">
+								<svg viewbox="0 0 14 12">
+									<use href='@img/static/icons/icons.svg#check-arrow'></use>
+								</svg>
+							</div>
+							<div class="consultation-form-feature">
+								<h4 class="consultation-form-feature__title">Возможно оформление в зачет вторичного жилья</h4>
+								<div class="consultation-form-feature__text">Наш юрист сопровождает вас на всех этапах сделки, готовит все необходимые документы</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>

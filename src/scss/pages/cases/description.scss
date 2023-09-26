@@ -1,0 +1,30 @@
+.description {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@media (max-width: $mbpPC) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mbpT) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@media (max-width: $mbpM) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&__img-block {
+		padding-top: 81%;
+		@media (max-width: $mbpPC) {
+			padding-top: 97%;
+		}
+	}
+	& > .splited-section {
+		@media (max-width: 820px) {
+			gap: 40px;
+		}
+		@media (max-width: $mbpM) {
+			gap: 30px;
+		}
+	}
+}

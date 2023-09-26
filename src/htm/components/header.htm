@@ -1,0 +1,48 @@
+<header class="header @@className">
+	<div class="section-container">
+		<div class="header__inner">
+			<div class="header__group header__group_left">
+				<button type="button" class="header__burger-btn burger-btn" data-drawer-open="main-menu">
+					<span class="burger-btn__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+				<a href="/" class="header__logo main-logo">
+					<figure>
+						<img src="@img/static/main-logo.svg" alt="main-logo">
+						<img src="@img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+					</figure>
+				</a>
+			</div>
+			<div class="header__main-menu-area" data-portal-src="main-nav-to-aside" data-portal-media="(max-width: 1400px)">
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li class="main-menu__item">
+							<a href="about.html" class="nav-link active-item main-menu__link @@companyIsActive">Компания</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="projects.html" class="nav-link active-item main-menu__link @@projectsIsActive">Проекты</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="built.html" class="nav-link active-item main-menu__link @@buildIsActive">Построенные объекты</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="show-area.html" class="nav-link active-item main-menu__link @@showAreaIsActive">Выставочная площадка</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="contacts.html" class="nav-link active-item main-menu__link @@contactsIsActive">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__group header__group_right">
+				<a href="tel:88005555555" class="active-item header__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+				<button type="button" class="btn btn_light-clear btn_hover-sand btn_for-header" data-callback-request-btn>
+					<span class="btn__inner"><span class="btn__cap btn__cap_for-header">Заказать звонок</span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>

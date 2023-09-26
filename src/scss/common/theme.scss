@@ -1,0 +1,23 @@
+$--mainWhiteColor: #EFEFEF;
+$--whiteColor:  white;
+$--blackColor: #28282C;
+$--deepBlackColor: #1E1E1E;
+$--sandColor: #FBD691;
+$--hoverColor: $--sandColor;
+:root {
+	--slider-track-color: #F1F1F1;
+	--slider-main-color: #FBD691;
+	--main-white-color: #EFEFEF;
+	--white-color:  white;
+	--black-color: #28282C;
+	--deep-black-color: #1E1E1E;
+	--sand-color: #FBD691;
+	--hover-color: var(--sand-color);
+	--error-color: #D82142;
+	// Checkbox
+	--checkbox-round-gray-bg-color: #444444;
+	--checkbox-box-border-color: #ADADAD;
+	// 
+	--text-base-color: #ADADAD;
+	--graphit-color: #2B2B2B;
+}

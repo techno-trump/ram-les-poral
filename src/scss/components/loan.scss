@@ -1,0 +1,154 @@
+.loan {
+	padding-bottom: 100px;
+	@media (max-width: $mbpPC) {
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mbpT) {
+		padding-bottom: 60px;
+	}
+	@media (max-width: $mbpM) {
+		padding-bottom: 40px;
+	}
+	&__header {
+		margin-bottom: 40px;
+		@media (min-width: ($mbpM + 0.1px)) {
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+			grid-template-rows: auto 1fr;
+			gap: 28px 60px;
+		}
+		@media (min-width: ($mbpM + 0.1px)) and (max-width: $mbpPC) {
+			gap: 18px 60px;
+		}
+		@media (max-width: $mbpM) {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+		}
+	}
+	&__title {
+		@media (max-width: $mbpM) {
+			margin-bottom: 28px;
+		}
+	}
+	&__subtitle {
+		grid-row: 2;
+		max-width: 480px;
+		font-size: 16px;
+		line-height: 22px;
+		color: var(--text-base-color);
+		@media (max-width: $mbpPC) {
+			font-size: 14px;
+			line-height: 17px;
+		}
+		@media (max-width: $mbpM) {
+			margin-bottom: 40px;
+		}
+	}
+	&__banks {
+		display: flex;
+		flex-direction: column;
+		grid-row: 1/span 2;
+	}
+	&__banks-inner {
+		flex: 1 auto;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		margin-left: -50px;
+		margin-top: -30px;
+		@media (max-width: $mbpPC) {
+			margin-left: -40px;
+		}
+		@media (max-width: $mbpT) {
+			margin-left: -36px;
+		}
+		@media (max-width: $mbpM) {
+			margin-left: -28px;
+		}
+		& > img {
+			height: 72px;
+			object-fit: contain;
+			margin-left: 50px;
+			margin-top: 30px;
+			@media (max-width: $mbpPC) {
+				margin-left: 40px;
+			}
+			@media (max-width: $mbpT) {
+				height: 50px;
+				margin-left: 36px;
+			}
+			@media (max-width: $mbpSM) {
+				height: 30px;
+				margin-left: 28px;
+			}
+		}
+	}
+}
+.consultation-form {
+	border: 2px solid #FFFFFF88;
+	padding: 46px;
+	@media (max-width: $mbpT) {
+		padding: 40px;
+	}
+	@media (max-width: $mbpM) {
+		padding: 35px 16px;
+	}
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 64px;
+		@media (max-width: $mbpPC) {
+			gap: 40px;
+		}
+		@media (max-width: $mbpM) {
+			grid-template-columns: 1fr;
+			gap: 34px;
+		}
+	}
+	&__features {
+		display: grid;
+		gap: 34px;
+		@media (max-width: $mbpM) {
+			gap: 28px;
+		}
+		& > li {
+			display: flex;
+			& > *:first-child {
+				margin-right: 20px;
+				@media (max-width: $mbpM) {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+.consultation-form-feature {
+	&__title {
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: var(--main-white-color);
+		margin-bottom: 20px;
+		@media (max-width: $mbpPC) {
+			font-size: 23px;
+			line-height: 22px;
+		}
+		@media (max-width: $mbpM) {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 22px;
+		}
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 22px;
+		color: var(--text-base-color);
+		@media (max-width: $mbpPC) {
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}

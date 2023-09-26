@@ -1,0 +1,121 @@
+@use "sass:math";
+@import "../config.scss";
+@import "../../../repo/scss/base/null.scss";
+
+// Подключение темы (набор цветов)
+@import "./theme.scss";
+
+// Подключить если есть локальные файлы шрифтов
+@import "./fonts.scss";
+
+// Базовая разметка страницы
+.section-container {
+	max-width: px($containerWidth);
+	padding-left: px(math.div($containerPadding, 2));
+	padding-right: px(math.div($containerPadding, 2));
+	margin: auto;
+	@media (max-width: $mbpPC) {
+		max-width: 1200px + $containerPadding;
+	}
+	@media (max-width: $mbpT) {
+		max-width: 960px + $containerPadding;
+	}
+	@media (max-width: $mbpM) {
+		padding: 0 10px;
+	}
+}
+.splited-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	@media (max-width: 820px) {
+		grid-template-columns: 1fr;
+	}
+}
+.section-half-container {
+	flex: 1 auto;
+	max-width: px(math.div($containerWidth, 2));
+	&_left {
+		padding-left: px(math.div($containerPadding, 2));
+		margin-left: auto;
+		margin-right: 0;
+	}
+	&_right {
+		padding-right: px(math.div($containerPadding, 2));
+		margin-right: auto;
+		margin-left: 0;
+	}
+	&_left, &_right {
+		@media (max-width: 820px) {
+			padding: 0 15px;
+		}
+	}
+	&_left &__inner {
+		@media (min-width: ($mbpPC + 0.1px)) {
+			padding-right: 90px;
+		}
+		@media (min-width: ($mbpT + 0.1px)) and (max-width: $mbpPC) {
+			padding-right: 70px;
+		}
+		@media (min-width: (820.1px)) and (max-width: $mbpT) {
+			padding-right: 50px;
+		}
+	}
+	&_right &__inner {
+		@media (min-width: ($mbpPC + 0.1px)) {
+			padding-left: 90px;
+		}
+		@media (min-width: ($mbpT + 0.1px)) and (max-width: $mbpPC) {
+			padding-left: 70px;
+		}
+		@media (min-width: (820.1px)) and (max-width: $mbpT) {
+			padding-left: 50px;
+		}
+	}
+	@media (min-width: ($mbpT + 0.1px)) and (max-width: $mbpPC) {
+		max-width: 600px;
+	}
+	@media (min-width: (820.1px)) and (max-width: $mbpT) {
+		max-width: 480px;
+	}
+}
+body {
+	min-height: 100%;
+	background-color: var(--deep-black-color);
+	& > main {
+		flex: 1 1 auto;
+	}
+}
+// Переменные разметки
+:root {
+	--gap-xxl: 100px;
+	--gap-xl: 60px;
+	--gap-lg: 40px;
+	--gap-md: 30px;
+	--gap-sm: 20px;
+	--gap-esm: 10px;
+	--gap-nano: 8px;
+	@media (max-width: $mbpPC) {
+		--gap-xxl: 80px;
+		--gap-lg: 30px;
+		--gap-md: 30px;
+		--gap-sm: 20px;
+		--gap-esm: 10px;
+		--gap-nano: 8px;
+	}
+}
+* {
+	scroll-behavior: smooth;
+}
+@import "./fonts.scss";
+@import "./typography.scss";
+@import "./framework.scss";
+@import "../components/drawers.scss";
+@import "../components/common.scss";
+@import "../components/header.scss";
+@import "../components/burger-menu.scss";
+@import "../components/footer.scss";
+@import "../components/advantages.scss";
+@import "../components/project-card.scss";
+@import "../components/catalogue.scss";
+@import "../components/location.scss";
+@import "../components/about.scss";

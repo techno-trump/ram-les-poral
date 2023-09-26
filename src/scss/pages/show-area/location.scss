@@ -1,0 +1,12 @@
+.location {
+	padding-top: 100px;
+	@media (max-width: $mbpPC) {
+		padding-top: 80px;
+	}
+	@media (max-width: $mbpT) {
+		padding-top: 60px;
+	}
+	@media (max-width: $mbpM) {
+		padding-top: 40px;
+	}
+}

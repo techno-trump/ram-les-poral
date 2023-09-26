@@ -1,0 +1,20 @@
+.catalogue {
+	padding-top: 71px;
+	padding-bottom: 0;
+	@media (max-width: $mbpPC) {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+	@media (max-width: $mbpT) {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	@media (max-width: $mbpM) {
+		padding-bottom: 0;
+	}
+	&__footer {
+		@media (max-width: $mbpM) {
+			padding-bottom: 20px;
+		}
+	}
+}

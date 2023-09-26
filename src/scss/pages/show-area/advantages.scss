@@ -1,0 +1,25 @@
+.advantages-review {
+	&__item:nth-child(2) &__desc {
+		max-width: 185px;
+		@media (max-width: $mbpPC) {
+			max-width: 165px;
+		}
+		@media (max-width: 700px) {
+			max-width: 100%;
+		}
+	}
+	&__item:last-child &__desc {
+		max-width: 260px;
+		@media (max-width: $mbpPC) {
+			max-width: 230px;
+		}
+		@media (max-width: 700px) {
+			max-width: 100%;
+		}
+	}
+	&__item &__desc {
+		@media (max-width: 700px) {
+			max-width: 100%;
+		}
+	}
+}

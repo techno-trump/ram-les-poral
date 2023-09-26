@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>РамЛес - о компании</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel='stylesheet' href='libs/swiper-9.2.3/swiper-bundle.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/common.min.css?_v=20230712084222'>
+	<link rel='stylesheet' href='css/about.min.css?_v=20230712084222'>
+	<!-- <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230712084222"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230712084222">
+
+	<!-- Libs and Common scripts -->
+	<script defered src='libs/tua-bsl.umd.js?_v=20230712084222'></script>
+	<script defered src='libs/jquery-3.6.2.min.js?_v=20230712084222'></script>
+	<script defered src='libs/jqueryValidate/jquery.validate.min.js?_v=20230712084222'></script>
+	<script defered src='libs/cleave.min.js?_v=20230712084222'></script>
+	<script defered src='js/common.min.js?_v=20230712084222'></script>
+
+	<!-- Page scripts -->
+	<script defered src='libs/swiper-9.2.3/swiper-bundle.min.js?_v=20230712084222'></script>
+	<script defered src='js/about.min.js?_v=20230712084222'></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключение шрифтов      &display=swap - добавить при подключении через плагин -->
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700&display=swap);
+	</style>
+	<!-- <script>
+		window.onerror = function(message, url, line, col, errorObj) {
+			console.log(`${message}\n${url}, ${line}:${col}`, errorObj);
+		};
+	</script> -->
+</head>
+
+<body>
+	<header class="header ">
+		<div class="section-container">
+			<div class="header__inner">
+				<div class="header__group header__group_left">
+					<button type="button" class="header__burger-btn burger-btn" data-drawer-open="main-menu">
+						<span class="burger-btn__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<a href="/" class="header__logo main-logo">
+						<figure>
+							<img src="img/static/main-logo.svg" alt="main-logo">
+							<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+						</figure>
+					</a>
+				</div>
+				<div class="header__main-menu-area" data-portal-src="main-nav-to-aside" data-portal-media="(max-width: 1400px)">
+					<nav class="main-menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a href="about.html" class="nav-link active-item main-menu__link ">Компания</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="projects.html" class="nav-link active-item main-menu__link ">Проекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="built.html" class="nav-link active-item main-menu__link ">Построенные объекты</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="show-area.html" class="nav-link active-item main-menu__link ">Выставочная площадка</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="contacts.html" class="nav-link active-item main-menu__link ">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__group header__group_right">
+					<a href="tel:88005555555" class="active-item header__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+					<button type="button" class="btn btn_light-clear btn_hover-sand btn_for-header" data-callback-request-btn>
+						<span class="btn__inner"><span class="btn__cap btn__cap_for-header">Заказать звонок</span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page__main">
+		<!-- Sections -->
+		<section class="welcome welcome_narrow relative">
+			<img class="img-as-bg" src="img/static/about/welcome@1x.jpg" srcset="img/static/about/welcome@1x.jpg 1920w, img/static/about/welcome@2x.jpg 2x" alt="welcome.jpg">
+			<div class="section-container welcome__container">
+				<a href="." class="text-link text-link_hover-sand text-link_tablet-as-btn text-link_mob-as-btn welcome__to-main-page-btn">
+					<svg class="text-link__icon text-link__icon_left" viewbox="0 0 13 12">
+						<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+					</svg>
+					<span class="text-link__cap">Вернуться на главную</span>
+				</a>
+				<h1 class="page-title">О компании</h1>
+			</div>
+		</section>
+		<section class="about dark-bg">
+			<div class="splited-section">
+				<div class="about__img-block relative">
+					<img src="img/static/about/about-01@2x.jpg" alt="about-01@2x.jpg" class="img-as-bg">
+				</div>
+				<div class="about__info-block">
+					<div class="section-half-container section-half-container_right">
+						<div class="section-half-container__inner">
+							<div class="info-block">
+								<h2 class="section-title info-block__title">О компании</h2>
+								<div class="info-block__body">
+									<p>Наша строительная компания специализируется на строительстве домов из клееного бруса. Мы предлагаем качественные услуги, используя только высококачественные материалы и профессиональные инструменты.</p>
+									<p>Клееный брус - это современный материал, который обладает множеством преимуществ перед другими строительными материалами. Он более прочный, устойчивый к деформациям и не подвержен разрушению от воздействия влаги и насекомых.</p>
+									<p>Мы гарантируем высокое качество нашей работы, начиная от разработки проекта и заканчивая сдачей дома в эксплуатацию. Мы учитываем все пожелания клиента и создаем уютный и комфортный дом, который будет соответствовать всем его требованиям.</p>
+									<p>Кроме того, мы предлагаем различные варианты отделки, такие как ламинат, кафель, обои, покраска стен и потолков. Мы также устанавливаем современные системы отопления, вентиляции и кондиционирования воздуха, чтобы обеспечить комфортное проживание в доме в любое время года.</p>
+									<p>Мы готовы принять заказы на строительство домов из клееного бруса любой сложности и размера. Свяжитесь с нами, чтобы получить консультацию и расчет стоимости проекта. Мы гарантируем высокое качество работы и своевременное выполнение заказа.</p>
+								</div>
+								<p class="quote info-block__subtitle">Здесь главная мысль, которую точно прочитаю, дальше большинство пользователей читать не будут, а это должны прочитать, именно поэтому здесь важно не воду лить, а бить в самую суть — это маркетинг! Мы предлагаем качественные услуги, используя только высококачественные материалы и профессиональные инструменты.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="splited-section">
+				<div class="about__info-block">
+					<div class="section-half-container section-half-container_left">
+						<div class="section-half-container__inner">
+							<div class="info-block">
+								<h2 class="section-title info-block__title">Как мы монтируем конструкции и подходим к работе</h2>
+								<div class="info-block__body">
+									<p>Наша строительная компания специализируется на строительстве домов из клееного бруса. Мы предлагаем качественные услуги, используя только высококачественные материалы и профессиональные инструменты.</p>
+									<p>Клееный брус - это современный материал, который обладает множеством преимуществ перед другими строительными материалами. Он более прочный, устойчивый к деформациям и не подвержен разрушению от воздействия влаги и насекомых.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__img-block relative">
+					<img src="img/static/about/about-02@2x.jpg" alt="about-02@2x.jpg" class="img-as-bg">
+				</div>
+			</div>
+		</section>
+		<section class="advantages dark-bg">
+			<div class="section-container">
+				<div class="advantages__header">
+					<h2 class="section-title">Собственное производство<br>клееного бруса</h2>
+					<div class="advantages__callback-request">
+						<div>Закажите звонок, чтобы задать вопросы про строительство дома</div>
+						<button type="button" class="btn btn_light-clear btn_hover-light advantages__callback-btn" data-callback-request-btn>
+							<span class="btn__inner">
+								<span class="btn__cap">Заказать звонок</span>
+								<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+									<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<ul class="advantages__body">
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Северная древесина</h3>
+						<p class="advantages__item-desc">
+							Строим дома из архангельского леса. Лето на севере короткое, годовые кольца местных деревьев узкие и расположены близко друг к другу. Такая древесина плотная, а значит постройки из нее будут прочными.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Эстетика натурального дерева</h3>
+						<p class="advantages__item-desc">
+							Дерево обладает прекрасным блеском, который может придать комнате теплоту и уют. Его естественная структура и форма привлекают взгляд и создают атмосферу гармонии и спокойствия
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Нет вреда от клея</h3>
+						<p class="advantages__item-desc">
+							При производстве клееного бруса используем Швейцарский однокомпонентный полеуретановый клей Purbond без содержания растворителей и формальдегидов. Наши дома не токсичны и не представляют опасности для здоровья.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Минимальная усадка</h3>
+						<p class="advantages__item-desc">
+							Клееный брус даёт усадку менее 1%. При производстве материал почти не изменяется и сохраняет первоначальную геометрию. Поэтому мы приступаем к внутренней отделке дома сразу после его возведения.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Экологичность</h3>
+						<p class="advantages__item-desc">
+							Клееный брус изготавливается в заводах, которые работают строго в соответствии с правилами экологической безопасности и не загрязняют окружающую среду
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__item-title">Заселяйтесь сразу</h3>
+						<p class="advantages__item-desc">
+							Берем на себя все этапы производства: займемся проектированием, закладкой фундамента, сборкой сруба, обустройством кровли, проведением коммуникаций, внутренней и внешней отделкой.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="director">
+			<div class="section-container director__layout">
+				<div class="director__img relative">
+					<img src="img/static/about/director.jpg" alt="director.jpg">
+				</div>
+				<div class="director__msg relative">
+					Клееный брус - это прекрасный выбор для тех, кто ищет прочный, устойчивый к воздействию грибков и насекомых, долговечный, экологически чистый и простой в монтаже материал для строительства
+					<img src="img/static/about/quote.png" alt="quote.png" class="director__quote-img">
+				</div>
+				<div class="director__person">
+					<div class="director__name">Иван Иванов</div>
+					<div class="director__title">Директор компании</div>
+				</div>
+			</div>
+		</section>
+		<section class="closing-poster relative">
+			<img src="img/static/about/closing-poster@2x.jpg" srcset="img/static/about/closing-poster@1x.jpg 1920w, img/static/about/closing-poster@2x.jpg 2x" alt="closing-poster@2x.jpg" class="img-as-bg">
+		</section>
+	</main>
+	<footer class="footer " itemscope itemtype="http://schema.org/WPFooter">
+		<div class="section-container">
+			<div class="footer__inner">
+				<div class="footer__body">
+					<div class="footer__nav-group">
+						<div class="footer__nav-group-inner">
+							<ul class="footer__nav footer-nav">
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Главная страница</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="about.html" class="active-item">Компания</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты бань</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/" class="active-item">Проекты домов</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="built.html" class="active-item">Построенные объекты</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="show-area.html" class="active-item">Выставочная площадка</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="contacts.html" class="active-item">Политика конфиденциальности</a>
+								</li>
+							</ul>
+							<div class="footer__contacts contacts" itemscope itemtype="http://schema.org/Organization">
+								<div class="contacts__item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Москва</span>,
+									<span itemprop="streetAddress">ул. Советская, д. 1, БЦ «Центральный», оф. 412</span>
+								</div>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="tel:+74953452323" itemprop="telephone">
+									+7&nbsp;495&nbsp;345&#8209;23&#8209;23
+								</a>
+								<a class="contacts__item active-item" href="mailto:info@website.ru" itemprop="email">info@website.ru</a>
+							</div>
+						</div>
+					</div>
+					<form id="footer-callback-request-form" name="callback-request" class="footer__callback-request-form callback-request-form">
+						<div class="callback-request-form__header ts-h2">
+							Хотите работать с нами?
+						</div>
+						<div class="callback-request-form__body">
+							<div class="form__field form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" required data-msg="Обязательное поле" name="name" type="text" placeholder="Введите имя">
+								</div>
+							</div>
+							<div class="form-field">
+								<div class="form-field__input form-input" data-track-child-focus>
+									<input class="form-input__input" data-rule-required data-msg-required="Обязательное поле" data-rule-minlength="18" data-msg-minlength="Не хватает цифр" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+								</div>
+							</div>
+							<button type="submit" class="btn btn_for-footer btn_light btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Заказать звонок</span>
+								</span>
+							</button>
+							<div class="form__field form-field">
+								<div class="custom-checkbox custom-checkbox_box form-field__input">
+									<label class="custom-checkbox__inner">
+										<input id="callback-request--agreement-accepted" data-rule-required data-msg-required="Нужно принять соглашение на обработку данных" type="checkbox" name="agreement-accepted" class="custom-checkbox__input">
+										<span class="custom-checkbox__body">
+											<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+												<use href='img/static/icons/icons.svg#check-arrow'></use>
+											</svg>
+										</span>
+									</label>
+									<label for="callback-request--agreement-accepted" class="custom-checkbox__label custom-checkbox__label_center">Нажимая на кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="footer__bottom">
+					<a href="/"><img src="img/static/partner-banner.jpg" alt="partner-banner.jpg" class="footer__banner"></a>
+					<span class="ts-text footer__about-dev">
+						Разработка сайта — Градус°
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="drawer drawer_overlapping drawer_full-screen" data-drawer="main-menu">
+		<div class="drawer__panel">
+			<div class="drawer__inner burger-menu">
+				<div class="burger-menu__main-layer" data-scrollable>
+					<div class="burger-menu__container section-container">
+						<div class="burger-menu__inner">
+							<div class="burger-menu__layout">
+								<div class="burger-menu__nav" data-portal-dest="main-nav-to-aside"></div>
+								<div class="burger-menu__group">
+									<div class="burger-menu__group-inner">
+										<a href="tel:88005555555" class="active-item burger-menu__tel">8&nbsp;800&nbsp;555&#8209;55&#8209;55</a>
+										<button type="button" class="btn btn_light-clear btn_hover-sand" data-callback-request-btn>
+											<span class="btn__inner">
+												<span class="btn__cap">Заказать звонок</span>
+												<svg class="btn__icon btn__icon_right" viewbox="0 0 13 12">
+													<use href='img/static/icons/icons.svg#arrow-45deg'></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+								<a href="/" class="burger-menu__logo main-logo">
+									<figure>
+										<img src="img/static/main-logo.svg" alt="main-logo">
+										<img src="img/static/main-logo-hovered.svg" alt="main-logo-hovered">
+									</figure>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger-menu__overlay">
+					<div class="burger-menu__container burger-menu__container_overlay section-container">
+						<div class="burger-menu__inner">
+							<button type="button" class="burger-menu__close-btn drawer__close-btn btn btn_only-icon" data-drawer-close="main-menu">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drawer drawer_overlapping drawer_modal" data-drawer="successful-callback-request">
+		<div class="drawer__panel">
+			<div class="drawer__inner">
+				<div class="drawer__body">
+					<div class="drawer__container">
+						<div class="thanks-panel">
+							<div class="thanks-panel__main">Спасибо<br>за обращение!</div>
+							<div class="thanks-panel__sub">Мы свяжемся с вами в течение 1 рабочего дня с 9:00 до 18:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="drawer__overlay">
+					<div class="drawer__header">
+						<div class="drawer__container">
+							<button type="button" class="drawer__close-btn btn btn_only-icon" data-drawer-close="successful-callback-request">
+								<svg class="svg-icon" viewbox="0 0 22 22">
+									<use href='img/static/icons/icons.svg#close-cross'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

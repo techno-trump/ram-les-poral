@@ -1,0 +1,13 @@
+.built-projects {
+	& .catalogue__header-inner {
+		justify-content: flex-start;
+		margin-left: 0;
+		& > * {
+			flex: 0 1 auto;
+			margin-left: 0;
+		}
+		& .swiper-slide:last-child {
+			margin-right: 0 !important;
+		}
+	}
+}

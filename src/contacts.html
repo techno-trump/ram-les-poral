@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('htm/components/head.htm',{
+		"title":"РамЛес - контакты",
+		"stylesheets":"<link rel='stylesheet' href='libs/swiper-9.2.3/swiper-bundle.min.css'><link rel='stylesheet' href='css/common.min.css'><link rel='stylesheet' href='css/contacts.min.css'>",
+		"scripts":"<script defered src='libs/swiper-9.2.3/swiper-bundle.min.js'></script><script defered src='js/contacts.min.js'></script>"
+	})
+	<body>
+		@@include('htm/components/header.htm',{})
+		@@include('htm/pages/contacts/main.htm',{"className":"page__main"})
+		@@include('htm/components/footer.htm',{"className":"page__footer"})
+		@@include('htm/components/main-menu-drawer.htm',{})
+		@@include('htm/components/shared-drawers.htm',{})
+	</body>
+</html>

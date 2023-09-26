@@ -1,0 +1,127 @@
+.catalogue-main-filter {
+	display: flex;
+	flex-direction: column;
+	color: var(--main-white-color);
+	background-color: var(--black-color);
+	&__inner {
+		padding-top: 190px;
+		padding-bottom: 66px;
+		@media (max-width: $mbpPC) {
+			padding-top: 120px;
+			padding-bottom: 50px;
+		}
+		@media (max-width: $mbpT) {
+			padding-top: 95px;
+			padding-bottom: 40px;
+		}
+		@media (max-width: $mbpM) {
+			padding-top: 25px;
+			padding-bottom: 15px;
+		}
+	}
+	&__title {
+		font-size: 65px;
+		font-weight: 700;
+		line-height: 70px;
+		letter-spacing: -0.01em;
+		margin-bottom: 55px;
+		@media (max-width: $mbpPC) {
+			font-size: 55px;
+			line-height: 59px;
+			margin-bottom: 55px;
+			margin-bottom: 35px;
+		}
+		@media (max-width: $mbpT) {
+			font-size: 45px;
+			line-height: 48px;
+			margin-bottom: 25px;
+		}
+		@media (max-width: $mbpM) {
+			font-size: 33px;
+			line-height: 35px;
+			margin-bottom: 35px;
+		}
+		&:after {
+			content: ":";
+			@media (max-width: $mbpM) {
+				content: "";
+			}
+		}
+	}
+	&__container {
+		padding-left: 75px;
+		padding-right: 75px;
+		@media (max-width: $mbpPC) {
+			padding-left: 100px;
+			padding-right: 65px;
+		}
+		@media (max-width: $mbpT) {
+			padding-left: 32px;
+			padding-right: 100px;
+		}
+		@media (max-width: $mbpSM) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	&__body {
+		flex: 1 1 auto;
+		margin-bottom: 40px;
+		@media (max-width: $mbpPC) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: $mbpM) {
+			margin-bottom: 40px;
+		}
+	}
+	&__body &__container {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 30px;
+		@media (max-width: $mbpSM) {
+			grid-template-columns: 1fr;
+		}
+	}
+	& .filter-block.max-width {
+		grid-column: auto/span 2;
+		@media (max-width: $mbpSM) {
+			grid-column: auto/span 1;
+		}
+	}
+	&__footer &__container {
+		display: inline-grid;
+		gap: 15px;
+		@media (max-width: $mbpSM) {
+			display: grid;
+		}
+	}
+	& .custom-checkbox__label {
+		top: 0;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+
+}
+.filter-block {
+	&__name {
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: var(--main-white-color);
+		margin-bottom: 18px;
+		@media (max-width: $mbpPC) {
+			font-size: 23px;
+			line-height: 22px;
+		}
+		@media (max-width: $mbpM) {
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+}
+.filters-list {
+	display: grid;
+	gap: 15px;
+}

@@ -1,0 +1,241 @@
+<div class="drawer drawer_overlapping drawer_left" data-drawer="filter">
+	<div class="drawer__panel">
+		<form name="main-filter" class="drawer__inner catalogue-main-filter" >
+			<div class="drawer__header">
+				<div class="drawer__container">
+					<button type="button" class="btn btn_only-icon drawer__close-btn" data-drawer-close="filter">
+						<svg class="svg-icon" viewbox="0 0 22 22">
+							<use href='@img/static/icons/icons.svg#close-cross'></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="catalogue-main-filter__inner" data-scrollable>
+				<div class="catalogue-main-filter__body">
+					<div class="catalogue-main-filter__container">
+						<h2 class="catalogue-main-filter__title">Фильтр каталога</h2>
+					</div>
+					<div class="catalogue-main-filter__body">
+						<div class="catalogue-main-filter__container">
+							<div class="filter-block">
+								<h3 class="filter-block__name">Категория дома:</h3>
+								<div class="filter-block__body">
+									<ul class="filters-list">
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--house" type="checkbox" name="category--house" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--house" class="custom-checkbox__label custom-checkbox__label_center">Дома</label>
+											</div>
+										</li>
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--half-timbered" type="checkbox" name="category--half-timbered" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--half-timbered" class="custom-checkbox__label custom-checkbox__label_center">Фахверки</label>
+											</div>
+										</li>
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--guest-houses" type="checkbox" name="category--guest-houses" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--guest-houses" class="custom-checkbox__label custom-checkbox__label_center">Гостевые дома</label>
+											</div>
+										</li>
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--baths" type="checkbox" name="category--baths" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--baths" class="custom-checkbox__label custom-checkbox__label_center">Бани</label>
+											</div>
+										</li>
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--gazebos" type="checkbox" name="category--gazebos" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--gazebos" class="custom-checkbox__label custom-checkbox__label_center">Гриль-беседки</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-block">
+								<h3 class="filter-block__name">Этажность:</h3>
+								<div class="filter-block__body">
+									<ul class="filters-list">
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--floors--one" type="checkbox" name="floors--one" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--floors--one" class="custom-checkbox__label custom-checkbox__label_center">Один этаж</label>
+											</div>
+										</li>
+										<li>
+											<div class="custom-checkbox custom-checkbox_box">
+												<label class="custom-checkbox__inner">
+													<input id="main-filter--floors--two" type="checkbox" name="floors--two" class="custom-checkbox__input">
+													<span class="custom-checkbox__body">
+														<svg class="custom-checkbox__icon" viewbox="0 0 14 12">
+															<use href='@img/static/icons/icons.svg#check-arrow'></use>
+														</svg>
+													</span>
+												</label>
+												<label for="main-filter--floors--one" class="custom-checkbox__label custom-checkbox__label_center">Два этажа</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-block max-width">
+								<h3 class="filter-block__name">Цена:</h3>
+								<div class="filter-block__body">
+									<div class="range-controls-set">
+										<div class="range-inputs-group">
+											<label class="range-input" data-track-child-focus style="--min-width: 154px;">
+												<span class="range-input__body">
+													<span class="range-input__input-wrap">
+														<input id="price-from" maxlength="10" type="text"
+															name="__price-from"
+															class="range-input__input"
+															data-price
+															data-input-auto-size
+															data-range-input-from="price">
+													</span>
+												</span>
+												<span class="range-input__unit">₽</span>
+											</label>
+											<span class="range-inputs-group__delimiter"></span>
+											<label class="range-input" data-track-child-focus style="--min-width: 154px;">
+												<span class="range-input__body">
+													<span class="range-input__input-wrap">
+														<input id="price-to" maxlength="10" type="text"
+															name="__price-to"
+															class="range-input__input"
+															data-price
+															data-input-auto-size
+															data-range-input-to="price">
+													</span>
+												</span>
+												<span class="range-input__unit">₽</span>
+											</label>
+										</div>
+										<div class="double-range-slider" data-double-range-slider="price" data-sync-with-inputs>
+											<input id="main-filter--price-from" class="double-range-slider__from"
+												name="price-from"
+												type="range" 
+												min="1000"
+												max="99000000"
+												value="1500000"
+											>
+											<input id="main-filter--price-to" class="double-range-slider__to"
+												name="price-to"
+												type="range" 
+												min="1000"
+												max="99000000"
+												value="99000000"
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter-block max-width">
+								<h3 class="filter-block__name">Площадь:</h3>
+								<div class="filter-block__body">
+									<div class="range-controls-set">
+										<div class="range-inputs-group">
+											<label class="range-input" data-track-child-focus style="--min-width: 124px;">
+												<span class="range-input__prefix">от</span>
+												<span class="range-input__body">
+													<span class="range-input__input-wrap">
+														<input id="main-filter--square-from-input" maxlength="3" type="text" name="__square-from" class="range-input__input" data-only-digits data-input-auto-size data-range-input-from="square">
+													</span>
+												</span>
+												<span class="range-input__unit">м²</span>
+											</label>
+											<span class="range-inputs-group__delimiter"></span>
+											<label class="range-input" data-track-child-focus style="--min-width: 124px;">
+												<span class="range-input__prefix">до</span>
+												<span class="range-input__body">
+													<span class="range-input__input-wrap">
+														<input id="main-filter--square-to-input" maxlength="3" type="text" name="__square-to" class="range-input__input" data-only-digits data-input-auto-size data-range-input-from="square">
+													</span>
+												</span>
+												<span class="range-input__unit">м²</span>
+											</label>
+										</div>
+										<div class="double-range-slider" data-double-range-slider="square" data-sync-with-inputs>
+											<input id="main-filter--square-from" class="double-range-slider__from"
+												name="square-from"
+												type="range" 
+												min="10"
+												max="999"
+												value="120"
+											>
+											<input id="main-filter--square-to" class="double-range-slider__to"
+												name="square-to"
+												type="range" 
+												min="10"
+												max="999"
+												value="999"
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalogue-main-filter__footer">
+						<div class="catalogue-main-filter__container">
+							<button type="submit" class="btn btn_light-clear btn_mob-big btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Применить фильтр</span>
+								</span>
+							</button>
+							<button id="main-filter-reset" type="button" class="btn btn_light btn_mob-big btn_hover-sand">
+								<span class="btn__inner">
+									<span class="btn__cap">Очистить фильтр</span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
